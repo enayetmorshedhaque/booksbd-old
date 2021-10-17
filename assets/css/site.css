@@ -9,13 +9,17 @@ a{
     color: black;
 }
 
+.mr-12{
+    margin-right: 12px;
+}
+
 svg:hover{
     cursor: pointer;
 }
 
 /* search input width css */
 .header .header-left .header-search form input{
-    width: 250%;
+    width: 220%;
 }
 
 /* navbar user icon css */
@@ -31,10 +35,23 @@ svg:hover{
     position: relative;
 }
 
+/* navbar user about css */
+.dropdown-menu .dropdown-menu-end .show{
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate(0, 88px);
+}
+
 /* main wrapper css */
+.main-wrapper{
+    margin-left: 0;
+}
+
 .main-wrapper.active{
     padding-bottom: 15px;
 }
+
 /* homepage book carousel css */
 .icon-card{
     padding: 0;
