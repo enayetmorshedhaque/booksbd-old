@@ -31,6 +31,10 @@ svg:hover{
     position: relative;
 }
 
+/* main wrapper css */
+.main-wrapper.active{
+    padding-bottom: 15px;
+}
 /* homepage book carousel css */
 .icon-card{
     padding: 0;
