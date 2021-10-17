@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+svg:hover{
+    cursor: pointer;
+}
+
+/* search input width css */
+.header .header-left .header-search form input{
+    width: 250%;
+}
+
+/* navbar user icon css */
+.header .header-right .profile-box .profile-info .info .image {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 46px;
+    height: 40px;
+    border-radius: 0%;
+    margin-left: 16px;
+    position: relative;
+}
+
+/* homepage book carousel css */
+.icon-card{
+    padding: 0;
+    border-radius: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.icon-card figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.icon-card figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: white;
+}
+
+.icon-card figcaption h5 {
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+.icon-card figure {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.icon-card figure > div > img{
+    width: 160px;
+    height: 230px;
+}
+
+.icon-card figure > div {
+	overflow: hidden;
+}
+
+.icon-card figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.icon-card figure:hover img,
+.icon-card figure.cs-hover img {
+	-webkit-transform: translateX(25%);
+	-moz-transform: translateX(25%);
+	-ms-transform: translateX(25%);
+	transform: translateX(25%);
+}
+
+.icon-card figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.icon-card figure:hover figcaption,
+.icon-card figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.book-name{
+    font-size: 1rem;
+}
+
+.author-name{
+    font-size: 0.8rem;
+    color: #ed4e6e;
+}
+
+.add-to-cart-div{
+    position: absolute;
+    bottom: 20px;
+}
+
+.add-to-cart-button{
+    font-size: 0.79rem;
+    font-weight: bold;
+}
+
+/* homepage card style */
+.card-style{
+    padding: 20px 15px;
+}
+
+/* carousel slider button css */
+.carousel-control-next, .carousel-control-prev{
+    cursor: pointer;
+    background-color: #efefef;
+    border: none;
+    padding: 20px 12px;
+    z-index: 1!important;
+    width: 3%;
+    height: 25%;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 4px 0 0 4px;
+    box-shadow: -2px 2px 12px -2px rgb(0 0 0 / 30%);
+}
+
+/* book category button style */
+.book-category button{
+    width: 180px;
+    height: 60px;
+}
+
+.book-category button:hover a{
+    color: white;
+}
+
+/* social icon style */
+.social-login {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #e6e6e6 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google:hover {
+    background-color: #db3236;
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover{
+    background-color: #FA8A39;
+}
+
+.twitter:hover {
+    background-color: #00acee;
+}
+
+.whatsapp:hover{
+    background-color: #25D366;
+}
+
+.youtube:hover{
+    background-color: #FF0000;
+}
+
+.google:hover,
+.facebook:hover,
+.twitter:hover i {
+    color: white;
+}
+
+.facebook:hover i,
+.instagram:hover i,
+.whatsapp:hover i,
+.youtube:hover i{
+    color: white;
+}
+
+.fab {
+    font-size: 1rem;
+}
