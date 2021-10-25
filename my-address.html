@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <title>BOOKS BD | BUY BOOKS ONLINE</title>
+
+    <!-- ========== All CSS files linkup ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Custom CSS files linkup -->
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+
+<body>
+    <!-- ======== sidebar-nav start =========== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">মেন্যু</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-home mr-12"></i>
+                            </span>
+                            <span class="text">
+                                হোম
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2 nav-item-has-children">
+                        <a href="authors.html" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_2"
+                            aria-controls="ddmenu_2" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon">
+                                <i class="lni lni-network mr-12"></i>
+                            </span>
+                            <span class="text">
+                                লেখক
+                            </span>
+                        </a>
+                        <ul id="ddmenu_2" class="collapse dropdown-nav">
+                            <li>
+                                <a href="settings.html"> Settings </a>
+                            </li>
+                            <li>
+                                <a href="blank-page.html"> Blank Page </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-3 py-2 nav-item-has-children">
+                        <a href="publications.html" class="collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#ddmenu_2" aria-controls="ddmenu_2" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="icon">
+                                <i class="lni lni-apartment mr-12"></i>
+                            </span>
+                            <span class="text">
+                                প্রকাশনী
+                            </span>
+                        </a>
+                        <ul id="ddmenu_2" class="collapse dropdown-nav">
+                            <li>
+                                <a href="settings.html"> Settings </a>
+                            </li>
+                            <li>
+                                <a href="blank-page.html"> Blank Page </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-users mr-12"></i>
+                            </span>
+                            <span class="text">
+                                চিল্ড্রেন্স কর্নার
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-thumbs-up mr-12"></i>
+                            </span>
+                            <span class="text">
+                                বেস্টসেলার
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-book mr-12"></i>
+                            </span>
+                            <span class="text">
+                                বইমেলা
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-timer mr-12"></i>
+                            </span>
+                            <span class="text">
+                                প্রি অর্ডার
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-library mr-12"></i>
+                            </span>
+                            <span class="text">
+                                বিষয়ভিত্তিক বই
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3 py-2">
+                        <a href="index.html">
+                            <span class="icon">
+                                <i class="lni lni-graduation mr-12"></i>
+                            </span>
+                            <span class="text">
+                                প্রাতিষ্ঠানিক অর্ডার
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- ======== sidebar-nav end =========== -->
+
+    <!-- ======== main-wrapper start =========== -->
+    <main class="main-wrapper custom-main-wrapper">
+        <!-- ========== header start ========== -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-10 col-md-10 col-6">
+                        <div class="header-left d-flex align-items-center">
+                            <div class="mr-20" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <svg width="20px" height="18px" id="menu-toggle">
+                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                                        d="M-0.000,-0.000 L20.000,-0.000 L20.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z">
+                                    </path>
+                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                                        d="M-0.000,8.000 L15.000,8.000 L15.000,10.000 L-0.000,10.000 L-0.000,8.000 Z">
+                                    </path>
+                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                                        d="M-0.000,16.000 L20.000,16.000 L20.000,18.000 L-0.000,18.000 L-0.000,16.000 Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <!-- ========== logo ========== -->
+                            <div class="navbar-logo mr-30">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" alt="BOOKS BD LOGO" class="img-fluid"
+                                        width="300px" />
+                                </a>
+                            </div>
+
+                            <div class="header-search d-none d-md-flex">
+                                <form action="#">
+                                    <input type="text" id="search_text" />
+                                    <button><i class="lni lni-search-alt"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-6">
+                        <div class="header-right">
+                            <!-- message start -->
+                            <div class="header-message-box ml-15 d-none d-md-flex">
+                                <button class="dropdown-toggle" type="button" id="message" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="lni lni-cart"></i>
+                                    <span>3</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="message">
+                                    <li>
+                                        <a href="#0">
+                                            <div class="image">
+                                                <img src="assets/images/lead/lead-5.png" alt="" />
+                                            </div>
+                                            <div class="content">
+                                                <h6>Jacob Jones</h6>
+                                                <p>Hey!I can across your profile and ...</p>
+                                                <span>10 mins ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <div class="image">
+                                                <img src="assets/images/lead/lead-3.png" alt="" />
+                                            </div>
+                                            <div class="content">
+                                                <h6>John Doe</h6>
+                                                <p>Would you mind please checking out</p>
+                                                <span>12 mins ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <div class="image">
+                                                <img src="assets/images/lead/lead-2.png" alt="" />
+                                            </div>
+                                            <div class="content">
+                                                <h6>Anee Lee</h6>
+                                                <p>Hey! are you available for freelance?</p>
+                                                <span>1h ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- message end -->
+                            <!-- profile start -->
+                            <div class="profile-box ml-15">
+                                <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="profile-info">
+                                        <div class="info">
+                                            <h6>John Doe</h6>
+                                            <div class="image">
+                                                <i class="lni lni-user fs-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="lni lni-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                                    <li>
+                                        <a href="#0">
+                                            <i class="lni lni-user"></i> View Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <i class="lni lni-alarm"></i> Notifications
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- profile end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ========== header end ========== -->
+
+        <!-- ========== section start ========== -->
+        <section class="section">
+            <div class="container-fluid">
+                <!-- ========== dashboard start ========== -->
+                <div class="title-wrapper pt-30 mb-30">
+                    <!-- ========== my account start ========== -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="box-sidebar custom-shadow pb-12 mb-20">
+                                <div>
+                                    <p class="px-20 pt-24 mb-20">DASHBOARD</p>
+                                    <a href="my-dashboard.html" class="dashboard-nav-link px-16">
+                                        <span>Dashboard</span>
+                                    </a>
+                                    <a href="my-orders.html" class="dashboard-nav-link px-16">
+                                        <span>Orders</span>
+                                    </a>
+                                    <a href="my-wishlist.html" class="dashboard-nav-link px-16">
+                                        <span>Wishlist</span>
+                                    </a>
+
+                                    <p class="px-20 pt-24 mb-20">SETTINGS</p>
+                                    <a href="my-account.html" class="dashboard-nav-link px-16">
+                                        <span>Profile Info</span>
+                                    </a>
+                                    <a href="my-address.html" class="dashboard-nav-link active px-16">
+                                        <span>Addresses</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="d-flex justify-content-between flex-wrap pb-12 mb-20">
+                                <div class="d-flex align-center ">
+                                    <div class="d-grid">
+                                        <h2 class="">My Addresses</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pb-12 mb-20">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card custom-shadow mb-3">
+                                            <div class="d-flex justify-content-between" style="align-items: center;">
+                                                <div class="px-5 pt-4 pb-1">
+                                                    <h4 class="fw-bold text-dark mb-20">Home Address Information</h4>
+                                                </div>
+                                                <div class="mr-20">
+                                                    <i class="lni lni-pencil-alt fs-4" id="home-address-edit-icon"></i>
+                                                    <i class="lni lni-checkmark fs-4 update-button"
+                                                        id="home-address-update-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="px-5">
+                                                <h6 class="fw-bold mb-2">Address</h6>
+                                                <div class="input-style-1 home-address-div">
+                                                    <input type="text" id="home-address-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="home-address-text">
+                                                    Shanti Neer, 302, Ahmed Nagar
+                                                </p>
+                                            </div>
+                                            <div class="px-5 py-2">
+                                                <h6 class="fw-bold mb-2">Area</h6>
+                                                <div class="input-style-1 home-address-div">
+                                                    <input type="text" id="home-area-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="home-area-text">Mirpru-1</p>
+                                            </div>
+                                            <div class="px-5 py-2">
+                                                <h6 class="fw-bold mb-2">City</h6>
+                                                <div class="input-style-1 home-address-div">
+                                                    <input type="text" id="home-city-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="home-city-text">Dhaka-1216</p>
+                                            </div>
+                                            <div class="px-5 pt-2 pb-4">
+                                                <h6 class="fw-bold mb-2">District</h6>
+                                                <div class="input-style-1 home-address-div">
+                                                    <input type="text" id="home-district-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="home-district-text">Dhaka</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card custom-shadow mb-3">
+                                            <div class="d-flex justify-content-between" style="align-items: center;">
+                                                <div class="px-5 pt-4 pb-1">
+                                                    <h4 class="fw-bold text-dark mb-20">Office Address Information</h4>
+                                                </div>
+                                                <div class="mr-20">
+                                                    <i class="lni lni-pencil-alt fs-4"
+                                                        id="office-address-edit-icon"></i>
+                                                    <i class="lni lni-checkmark fs-4 update-button"
+                                                        id="office-address-update-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="px-5">
+                                                <h6 class="fw-bold mb-2">Address</h6>
+                                                <div class="input-style-1 office-address-div">
+                                                    <input type="text" id="office-address-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="office-address-text">
+                                                    Shanti Neer, 302, Ahmed Nagar
+                                                </p>
+                                            </div>
+                                            <div class="px-5 py-2">
+                                                <h6 class="fw-bold mb-2">Area</h6>
+                                                <div class="input-style-1 office-address-div">
+                                                    <input type="text" id="office-area-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="office-area-text">Mirpru-1</p>
+                                            </div>
+                                            <div class="px-5 py-2">
+                                                <h6 class="fw-bold mb-2">City</h6>
+                                                <div class="input-style-1 office-address-div">
+                                                    <input type="text" id="office-city-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="office-city-text">Dhaka-1216</p>
+                                            </div>
+                                            <div class="px-5 pt-2 pb-4">
+                                                <h6 class="fw-bold mb-2">District</h6>
+                                                <div class="input-style-1 office-address-div">
+                                                    <input type="text" id="office-district-input">
+                                                </div>
+                                                <p class="mb-0 text-muted" id="office-district-text">Dhaka</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ========== my information start ========== -->
+
+                            <!-- ========== my information end ========== -->
+                        </div>
+                    </div>
+                    <!-- ========== my account end ========== -->
+
+                </div>
+                <!-- ========== dashboard end ========== -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- ========== section end ========== -->
+
+    </main>
+    <!-- ======== main-wrapper end =========== -->
+
+    <!-- ========== footer start =========== -->
+    <footer class="container-fluid p-0 m-0 bg-light">
+        <div class="container px-3 pt-5 pb-3">
+            <div class="row">
+                <div class="col-md-3 mb-2">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid p-0" width="200px">
+                    <address class="mt-3 fw-normal">
+                        ৩৭৪/১, আহমেদ নগর, মিরপুর-১, ঢাকা-১২১৬, বাংলাদেশ
+                    </address>
+                    <div class="text-start">
+                        <a href="mailto:query@booksbd.net"
+                            class="text-decoration-none text-dark">query@booksbd.net</a><br>
+                        <a href="tel:+8801713138707" class="text-decoration-none text-dark">+880-171-313-870-7</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h5 class="fw-bold mb-2">আমার একাউন্ট</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="login.html" class="text-decoration-none text-dark">লগইন</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="registration.html" class="text-decoration-none text-dark">রেজিস্টার</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="my-dashboard.html" class="text-decoration-none text-dark">আমার একাউন্ট</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="my-orders.html" class="text-decoration-none text-dark">অর্ডারের ইতিহাস</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="my-wishlist.html" class="text-decoration-none text-dark">আমার পছন্দ তালিকা</a>
+                        </li>
+                        <li>
+                            <a href="order-track.html" class="text-decoration-none text-dark">অর্ডার ট্র্যাকিং</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h5 class="fw-bold mb-2">নীতিমালা</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="return-policy.html" class="text-decoration-none text-dark">রিটার্ন নীতিমালা</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="refund-policy.html" class="text-decoration-none text-dark">ফেরত নীতিমালা</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="my-account.html" class="text-decoration-none text-dark">সাপোর্ট নীতিমালা</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="terms-of-service.html" class="text-decoration-none text-dark">পরিষেবার
+                                শর্তাবলী</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="privacy-policy.html" class="text-decoration-none text-dark">গোপনীয়তা নীতিমালা</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h5 class="fw-bold mb-2">তথ্য</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="about-us.html" class="text-decoration-none text-dark">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="contact-us.html" class="text-decoration-none text-dark">যোগাযোগ করুন</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="faq.html" class="text-decoration-none text-dark">প্রায়শই জিজ্ঞাসিত
+                                প্রশ্নাবলী</a>
+                        </li>
+                    </ul>
+                    <h5 class="fw-bold mb-2">সামাজিক যোগাযোগ</h5>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item facebook">
+                            <a href="https://facebook.com/booksbdthebookshop" class="text-decoration-none text-dark"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                                <i class="lni lni-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item instagram">
+                            <a href="https://www.instagram.com/booksbdshop/" class="text-decoration-none text-dark"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                                <i class="lni lni-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item whatsapp">
+                            <a href="https://wa.me/8801713138707" class="text-decoration-none text-dark"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp">
+                                <i class="lni lni-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item youtube">
+                            <a href="https://www.youtube.com/channel/UCOP0FmcXLQJgNjSDK5AaKUA"
+                                class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Youtube">
+                                <i class="lni lni-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="my-4">
+                <img src="assets/images/surjopay-footer.png" alt="" class="img-fluid">
+            </div>
+            <hr>
+            <div class="container">
+                <div class="fw-bold text-center">
+                    ©২০২১ <a href="index.html">বুকস বিডি</a>। সমস্ত অধিকার সংরক্ষিত
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== footer end =========== -->
+
+    <!-- ========= All Javascript files linkup ======== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ========= All Javascript files linkup ======== -->
+    <script src="assets/js/typewriter.js"></script>
+
+    <!-- ========= jQuery CDN ======== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+
+        // updates home address edit button to update button
+        $("#home-address-edit-icon").click(function () {
+            $("#home-address-edit-icon").hide();
+            $("#home-address-update-icon").show();
+
+            var homeAddressText = $("#home-address-text").text().trim();
+            var homeAreaText = $("#home-area-text").text().trim();
+            var homeCityText = $("#home-city-text").text().trim();
+            var homeDistrictText = $("#home-district-text").text().trim();
+
+            // Showing the input div
+            $(".home-address-div").show();
+
+            // hiding the home address texts
+            $("#home-address-text").hide();
+            $("#home-area-text").hide();
+            $("#home-city-text").hide();
+            $("#home-district-text").hide();
+
+            // sets the home address texts to input field
+            $("#home-address-input").val(homeAddressText);
+            $("#home-area-input").val(homeAreaText);
+            $("#home-city-input").val(homeCityText);
+            $("#home-district-input").val(homeDistrictText);
+        });
+
+        // updates home address update button to edit button
+        $("#home-address-update-icon").click(function () {
+            $("#home-address-update-icon").hide();
+            $("#home-address-edit-icon").show();
+
+            $("#home-address-input").parent().text($("#home-address-input").val());
+            $("#home-area-input").parent().text($("#home-area-input").val());
+            $("#home-city-input").parent().text($("#home-city-input").val());
+            $("#home-district-input").parent().text($("#home-district-input").val());
+        });
+
+        // updates office address edit button to update button
+        $("#office-address-edit-icon").click(function () {
+            $("#office-address-edit-icon").hide();
+            $("#office-address-update-icon").show();
+
+            var officeAddressText = $("#office-address-text").text().trim();
+            var officeAreaText = $("#office-area-text").text().trim();
+            var officeCityText = $("#office-city-text").text().trim();
+            var officeDistrictText = $("#office-district-text").text().trim();
+
+            // Showing the input div
+            $(".office-address-div").show();
+
+            // hiding the office address texts
+            $("#office-address-text").hide();
+            $("#office-area-text").hide();
+            $("#office-city-text").hide();
+            $("#office-district-text").hide();
+
+            // sets the office address texts to input field
+            $("#office-address-input").val(officeAddressText);
+            $("#office-area-input").val(officeAreaText);
+            $("#office-city-input").val(officeCityText);
+            $("#office-district-input").val(officeDistrictText);
+        });
+
+        // updates office address update button to edit button
+        $("#office-address-update-icon").click(function () {
+            $("#office-address-update-icon").hide();
+            $("#office-address-edit-icon").show();
+
+            $("#office-address-input").parent().text($("#office-address-input").val());
+            $("#office-area-input").parent().text($("#office-area-input").val());
+            $("#office-city-input").parent().text($("#office-city-input").val());
+            $("#office-district-input").parent().text($("#office-district-input").val());
+        });
+
+    </script>
+</body>
+
+</html>

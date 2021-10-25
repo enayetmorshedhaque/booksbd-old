@@ -13,6 +13,10 @@ a{
     margin-right: 12px;
 }
 
+.pb-12{
+    padding-bottom: 12px!important;
+}
+
 svg:hover{
     cursor: pointer;
 }
@@ -240,4 +244,77 @@ figure {
 
 .fab {
     font-size: 1rem;
+}
+
+.custom-main-wrapper{
+    padding-bottom: 0px;
+}
+
+.box-sidebar{
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.custom-shadow{
+    box-shadow: 0 1px 3px rgba(3,0,71,.09)!important;
+}
+
+.px-20{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+
+.px-16{
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+}
+
+.pt-24{
+    padding-top: 24px!important;
+}
+
+.dashboard-nav-link{
+    color: #2b3445!important;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid #fff;
+    margin-bottom: 20px;
+
+
+}
+
+.dashboard-nav-link.active {
+    color: #d23f57!important;
+    border-left: 4px solid #d23f57;
+}
+
+.dashboard-nav-link:hover {
+    color: #d23f57!important;
+    border-left: 4px solid #d23f57;
+}
+
+.edit-button{
+    font-size: 0.875rem!important;
+    height: 36px;
+    min-width: 64px;
+    padding: 0 16px;
+}
+
+.update-button{
+    display: none;
+}
+
+.home-address-div, .office-address-div, .profile-div{
+    display: none;
+}
+
+.input-style-1 {
+    margin-bottom: 0px;
+}
+
+.offcanvas-start{
+    width: 250px!important;
 }
