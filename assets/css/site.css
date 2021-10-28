@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
+html::-webkit-scrollbar, .scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+html::-webkit-scrollbar-track, .scrollbar::-webkit-scrollbar {
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb, .scrollbar::-webkit-scrollbar {
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:hover, .scrollbar::-webkit-scrollbar {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active, .scrollbar::-webkit-scrollbar {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
+
+
 *{
     font-family: 'Hind Siliguri', sans-serif;
 }
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
     color: black;
 }
 
@@ -19,6 +48,140 @@ a{
 
 svg:hover{
     cursor: pointer;
+}
+
+/* header css goes here */
+.header-main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.align-center{
+    align-items: center!important;
+}
+
+.search-results{
+    position: absolute;
+    top: 110%;
+    left: -1px;
+    right: 0;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: -1;
+    padding: 0 20px;
+    transform: scaleX(0);
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header-logo{
+    padding-left: 0;
+    width: 22.5%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header-extras{
+    width: 77.5%;
+}
+
+.extras-menu {
+    margin: 0 0 0 40px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.extras-menu > li {
+    list-style: none;
+    float: right;
+    margin-bottom: 0;
+    padding: 0 20px;
+}
+
+.extras-menu > li > a {
+    color: black;
+    display: block;
+    position: relative;
+}
+
+.extras-menu > li > a:after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    right: 16px;
+    width: 13px;
+    height: 13px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    background-color: #fff;
+    z-index: -1;
+    padding: 0;
+    margin: 19px -7px 0 0;
+    opacity: 0;
+    transition: top 0.3s;
+}
+
+.icon-30{
+    font-size: 30px;
+    line-height: 1;
+}
+
+.item-counter {
+    background-color: #fcb800;
+    color: black;
+    position: absolute;
+    bottom: -3px;
+    right: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50%;
+    min-width: 18px;
+    padding: 0 5px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.offcanvas-body{
+    padding: 0;
+}
+
+.not-collapsed::after{
+    background-image: none;
+}
+
+.accordion-button.not-collapsed:not(.collapsed)::after{
+    background-image: none;
+}
+
+.accordion-body{
+    padding: 0 1.25rem 0.5rem;
+}
+
+.accordion-item{
+    border: 1px solid transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../images/chevron-up.png');
+}
+
+.nav-item:hover a{
+    color: #d23f57!important;
 }
 
 /* search input width css */
